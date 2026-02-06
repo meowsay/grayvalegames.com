@@ -1,0 +1,81 @@
+{
+  "games": [
+    {
+      "id": "ember-chronicle",
+      "status": "development",
+      "featured": true,
+      "coverImage": "assets/images/ember-cover.svg",
+      "cardImage": "assets/images/ember-card.svg",
+      "platform": ["Web", "iOS", "Android"],
+      "links": [
+        { "labelZh": "官网预约", "labelEn": "Official Wishlist", "url": "https://example.com/ember" },
+        { "labelZh": "TapTap", "labelEn": "TapTap", "url": "https://example.com/ember-taptap" }
+      ],
+      "zh": {
+        "title": "余烬编年史",
+        "genre": "文字放置 RPG",
+        "summary": "在文明崩坏后的边境中，玩家将统筹据点建设、远征探索与职业成长，构建长期演化的战术体系。",
+        "tags": ["世界观叙事", "远征系统", "职业构筑", "离线成长"],
+        "timeline": "2025 Q4 - 2026 Q3"
+      },
+      "en": {
+        "title": "Ember Chronicle",
+        "genre": "Idle Text RPG",
+        "summary": "Set in a fractured frontier world, players orchestrate base development, expedition automation, and class evolution through long-form strategic planning.",
+        "tags": ["Narrative World", "Expedition Systems", "Class Builds", "Offline Progress"],
+        "timeline": "Q4 2025 - Q3 2026"
+      }
+    },
+    {
+      "id": "ledger-of-alchemists",
+      "status": "planning",
+      "featured": false,
+      "coverImage": "assets/images/alchemist-cover.svg",
+      "cardImage": "assets/images/alchemist-card.svg",
+      "platform": ["Web", "PC"],
+      "links": [
+        { "labelZh": "Steam 愿望单", "labelEn": "Steam Wishlist", "url": "https://example.com/alchemist-steam" }
+      ],
+      "zh": {
+        "title": "炼金账簿",
+        "genre": "放置模拟 RPG",
+        "summary": "聚焦工坊生产、材料网络和市场变化，玩家通过自动化链路与商业策略构建跨阶段增长。",
+        "tags": ["经济系统", "制造网络", "交易策略", "事件市场"],
+        "timeline": "2026 Q2 - 2027 Q1"
+      },
+      "en": {
+        "title": "Ledger of Alchemists",
+        "genre": "Idle Simulation RPG",
+        "summary": "A strategic economy RPG where workshop pipelines, material routes, and market shifts combine into a high-agency long-term optimization loop.",
+        "tags": ["Economy Systems", "Crafting Network", "Trading Strategy", "Event Market"],
+        "timeline": "Q2 2026 - Q1 2027"
+      }
+    },
+    {
+      "id": "watchers-of-vault",
+      "status": "live",
+      "featured": false,
+      "coverImage": "assets/images/vault-cover.svg",
+      "cardImage": "assets/images/vault-card.svg",
+      "platform": ["Android", "Steam"],
+      "links": [
+        { "labelZh": "Google Play", "labelEn": "Google Play", "url": "https://example.com/vault-gp" },
+        { "labelZh": "Steam", "labelEn": "Steam", "url": "https://example.com/vault-steam" }
+      ],
+      "zh": {
+        "title": "穹库守望者",
+        "genre": "叙事放置 RPG",
+        "summary": "以章节剧情和关键抉择推进文明秘史，玩家在多职业并行成长中追求高阶战术与分支结局。",
+        "tags": ["章节叙事", "分支结局", "自动战斗", "赛季循环"],
+        "timeline": "2024 Q3 - 至今"
+      },
+      "en": {
+        "title": "Watchers of Vault",
+        "genre": "Idle Narrative RPG",
+        "summary": "Chapter-based storytelling and branching decisions shape a living world while multi-class progression and seasonal loops drive long-term mastery.",
+        "tags": ["Chapter Narrative", "Branching Endings", "Auto Combat", "Seasonal Loop"],
+        "timeline": "Q3 2024 - Present"
+      }
+    }
+  ]
+}

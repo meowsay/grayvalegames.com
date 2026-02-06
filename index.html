@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrayVale Games</title>
+    <meta
+      name="description"
+      content="GrayVale Games crafts globally focused idle RPG experiences powered by strategy depth, narrative immersion, and long-term progression systems."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="hero-backdrop" aria-hidden="true"></div>
+    <div class="noise"></div>
+
+    <header class="hero container">
+      <nav class="topbar">
+        <p class="brand">GrayVale Games <span>灰谷游戏</span></p>
+        <div class="lang-switch" role="group" aria-label="Language Switch">
+          <button id="langZh" type="button">中文</button>
+          <button id="langEn" type="button">EN</button>
+        </div>
+      </nav>
+
+      <div class="hero-grid">
+        <div>
+          <div class="brand-lockup">
+            <p class="brand-cn">灰谷游戏</p>
+            <p class="brand-en">GRAYVALE GAMES</p>
+          </div>
+          <p id="companyClaim" class="company-claim"></p>
+          <p id="kicker" class="kicker"></p>
+          <h1 id="heroTitle"></h1>
+          <p id="heroText" class="hero-text"></p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="featured-section" class="section featured-section">
+        <div class="section-head">
+          <h2 id="featuredHeading"></h2>
+          <p id="featuredHint"></p>
+        </div>
+
+        <article id="featuredCard" class="featured-card" aria-live="polite"></article>
+      </section>
+
+      <section id="portfolio-section" class="section">
+        <div class="section-head">
+          <h2 id="gamesHeading"></h2>
+          <p id="gamesHint"></p>
+        </div>
+
+        <div class="toolbar">
+          <label id="statusLabel" for="statusFilter"></label>
+          <select id="statusFilter" aria-label="status filter"></select>
+        </div>
+
+        <div id="gamesGrid" class="games-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2 id="studioHeading"></h2>
+        </div>
+        <div id="featureGrid" class="feature-grid"></div>
+      </section>
+
+      <section class="section contact-section">
+        <div class="section-head">
+          <h2 id="contactHeading"></h2>
+        </div>
+        <p id="contactText" class="contact-text"></p>
+        <a id="contactEmail" class="contact-email" href="mailto:meowsaygames@outlook.com">
+          meowsaygames@outlook.com
+        </a>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>© <span id="year"></span> GrayVale Games</p>
+      <p id="footerText"></p>
+    </footer>
+
+    <template id="featureTemplate">
+      <article class="feature-card">
+        <p class="feature-index"></p>
+        <h3 class="feature-title"></h3>
+        <p class="feature-desc"></p>
+      </article>
+    </template>
+
+    <template id="gameCardTemplate">
+      <article class="game-card">
+        <img class="game-image" alt="" loading="lazy" />
+        <div class="game-content">
+          <div class="card-top">
+            <p class="game-type"></p>
+            <span class="game-status"></span>
+          </div>
+          <h3 class="game-title"></h3>
+          <p class="game-summary"></p>
+          <ul class="chip-list"></ul>
+          <div class="meta-row"></div>
+          <div class="link-row"></div>
+        </div>
+      </article>
+    </template>
+
+    <script src="assets/main.js" defer></script>
+  </body>
+</html>
