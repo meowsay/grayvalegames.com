@@ -230,7 +230,6 @@ h2 {
   padding: 1.05rem;
   display: grid;
   gap: 0.76rem;
-  max-width: 900px;
   background: linear-gradient(to top, rgba(6, 11, 20, 0.94), rgba(6, 11, 20, 0.75), rgba(6, 11, 20, 0));
 }
 
