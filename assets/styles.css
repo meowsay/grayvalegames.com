@@ -207,18 +207,19 @@ h2 {
 
 .featured-card {
   position: relative;
-  min-height: 520px;
+  aspect-ratio: 16/9;
+  min-height: 0;
   border: 1px solid #35557d;
   border-radius: 18px;
   overflow: hidden;
-  background: #0a1528;
+  background: #060d19;
 }
 
 .featured-image {
   width: 100%;
   height: 100%;
-  min-height: 520px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: var(--media-pos, 50% 50%);
 }
 
 .featured-content {
@@ -290,6 +291,7 @@ select {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
+  object-position: var(--media-pos, 50% 50%);
   border-bottom: 1px solid #2c466a;
 }
 
@@ -479,9 +481,8 @@ select {
     padding-bottom: 28px;
   }
 
-  .featured-card,
-  .featured-image {
-    min-height: 380px;
+  .featured-card {
+    aspect-ratio: 16/9;
   }
 
   .section-head,

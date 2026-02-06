@@ -25,7 +25,9 @@ GrayVale Games（灰谷游戏）国际化官网，支持：
 - `status`: `planning | development | live`
 - `featured`: 是否主推
 - `coverImage`: Featured 大图
+- `coverPosition`: Featured 大图焦点（如 `50% 40%`）
 - `cardImage`: 产品卡片图
+- `cardPosition`: 产品卡片图焦点（如 `50% 45%`）
 - `platform`: 平台数组
 - `links`: 下载/跳转链接数组
 - `zh` / `en`: 双语内容
@@ -35,6 +37,13 @@ GrayVale Games（灰谷游戏）国际化官网，支持：
 - `labelZh`: 中文按钮名
 - `labelEn`: 英文按钮名
 - `url`: 跳转地址
+
+图片适配说明：
+
+- `Featured` 按 `16:9`（`1920x1080`）展示，使用无裁剪适配
+- 产品卡片统一 `16:9` 展示
+- 通过 `coverPosition` / `cardPosition` 控制焦点，避免人物或标题被裁切
+- 图片加载失败会自动回退到 `assets/images/placeholder.svg`
 
 `zh` / `en` 字段：
 

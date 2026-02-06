@@ -142,6 +142,22 @@ const state = {
   localeSource: "fallback",
 };
 
+const fallbackImage = "assets/images/placeholder.svg";
+
+function bindSafeImage(imgEl, src, objectPosition) {
+  imgEl.src = src;
+  imgEl.style.setProperty("--media-pos", objectPosition || "50% 50%");
+  imgEl.addEventListener(
+    "error",
+    () => {
+      if (imgEl.src.includes(fallbackImage)) return;
+      imgEl.src = fallbackImage;
+      imgEl.style.setProperty("--media-pos", "50% 50%");
+    },
+    { once: true },
+  );
+}
+
 function applyLanguageToggleUI() {
   dom.langZh.classList.toggle("active", state.locale === "zh");
   dom.langEn.classList.toggle("active", state.locale === "en");
@@ -222,7 +238,7 @@ function renderFeatured() {
   document.documentElement.style.setProperty("--hero-cover", `url(${featured.coverImage})`);
 
   dom.featuredCard.innerHTML = `
-    <img class="featured-image" src="${featured.coverImage}" alt="${copy.title}" loading="eager" />
+    <img class="featured-image" alt="${copy.title}" loading="eager" />
     <div class="featured-content">
       <p class="featured-label">${t.featuredBadge}</p>
       <div class="card-top">
@@ -240,6 +256,9 @@ function renderFeatured() {
       <div class="link-row" id="featuredLinks"></div>
     </div>
   `;
+
+  const featuredImage = dom.featuredCard.querySelector(".featured-image");
+  bindSafeImage(featuredImage, featured.coverImage, featured.coverPosition);
 
   const linkRow = dom.featuredCard.querySelector("#featuredLinks");
   buildLinkRow(linkRow, featured, t);
@@ -270,8 +289,8 @@ function renderGames() {
     root.style.animationDelay = `${index * 0.06}s`;
 
     const gameImage = card.querySelector(".game-image");
-    gameImage.src = game.cardImage || game.coverImage;
     gameImage.alt = copy.title;
+    bindSafeImage(gameImage, game.cardImage || game.coverImage, game.cardPosition);
 
     card.querySelector(".game-type").textContent = copy.genre;
     card.querySelector(".game-status").textContent = statusText;

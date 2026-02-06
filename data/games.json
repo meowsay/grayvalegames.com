@@ -4,12 +4,22 @@
       "id": "ember-chronicle",
       "status": "development",
       "featured": true,
-      "coverImage": "assets/images/ember-cover.svg",
-      "cardImage": "assets/images/ember-card.svg",
+      "coverImage": "assets/images/game1.png",
+      "coverPosition": "50% 40%",
+      "cardImage": "assets/images/game1.png",
+      "cardPosition": "50% 45%",
       "platform": ["Web", "iOS", "Android"],
       "links": [
-        { "labelZh": "官网预约", "labelEn": "Official Wishlist", "url": "https://example.com/ember" },
-        { "labelZh": "TapTap", "labelEn": "TapTap", "url": "https://example.com/ember-taptap" }
+        {
+          "labelZh": "官网预约",
+          "labelEn": "Official Wishlist",
+          "url": "https://example.com/ember"
+        },
+        {
+          "labelZh": "TapTap",
+          "labelEn": "TapTap",
+          "url": "https://example.com/ember-taptap"
+        }
       ],
       "zh": {
         "title": "余烬编年史",
@@ -22,7 +32,12 @@
         "title": "Ember Chronicle",
         "genre": "Idle Text RPG",
         "summary": "Set in a fractured frontier world, players orchestrate base development, expedition automation, and class evolution through long-form strategic planning.",
-        "tags": ["Narrative World", "Expedition Systems", "Class Builds", "Offline Progress"],
+        "tags": [
+          "Narrative World",
+          "Expedition Systems",
+          "Class Builds",
+          "Offline Progress"
+        ],
         "timeline": "Q4 2025 - Q3 2026"
       }
     },
@@ -31,10 +46,16 @@
       "status": "planning",
       "featured": false,
       "coverImage": "assets/images/alchemist-cover.svg",
+      "coverPosition": "52% 38%",
       "cardImage": "assets/images/alchemist-card.svg",
+      "cardPosition": "50% 42%",
       "platform": ["Web", "PC"],
       "links": [
-        { "labelZh": "Steam 愿望单", "labelEn": "Steam Wishlist", "url": "https://example.com/alchemist-steam" }
+        {
+          "labelZh": "Steam 愿望单",
+          "labelEn": "Steam Wishlist",
+          "url": "https://example.com/alchemist-steam"
+        }
       ],
       "zh": {
         "title": "炼金账簿",
@@ -46,8 +67,13 @@
       "en": {
         "title": "Ledger of Alchemists",
         "genre": "Idle Simulation RPG",
-        "summary": "A strategic economy RPG where workshop pipelines, material routes, and market shifts combine into a high-agency long-term optimization loop.",
-        "tags": ["Economy Systems", "Crafting Network", "Trading Strategy", "Event Market"],
+        "summary": "A strategic economy RPG where workshop pipelines, material routes, and market shifts combine into a high-agency long-term optimization loop.A strategic economy RPG where workshop pipelines, material routes, and market shifts combine into a high-agency long-term optimization loop.",
+        "tags": [
+          "Economy Systems",
+          "Crafting Network",
+          "Trading Strategy",
+          "Event Market"
+        ],
         "timeline": "Q2 2026 - Q1 2027"
       }
     },
@@ -56,11 +82,21 @@
       "status": "live",
       "featured": false,
       "coverImage": "assets/images/vault-cover.svg",
+      "coverPosition": "50% 40%",
       "cardImage": "assets/images/vault-card.svg",
+      "cardPosition": "50% 45%",
       "platform": ["Android", "Steam"],
       "links": [
-        { "labelZh": "Google Play", "labelEn": "Google Play", "url": "https://example.com/vault-gp" },
-        { "labelZh": "Steam", "labelEn": "Steam", "url": "https://example.com/vault-steam" }
+        {
+          "labelZh": "Google Play",
+          "labelEn": "Google Play",
+          "url": "https://example.com/vault-gp"
+        },
+        {
+          "labelZh": "Steam",
+          "labelEn": "Steam",
+          "url": "https://example.com/vault-steam"
+        }
       ],
       "zh": {
         "title": "穹库守望者",
@@ -73,7 +109,12 @@
         "title": "Watchers of Vault",
         "genre": "Idle Narrative RPG",
         "summary": "Chapter-based storytelling and branching decisions shape a living world while multi-class progression and seasonal loops drive long-term mastery.",
-        "tags": ["Chapter Narrative", "Branching Endings", "Auto Combat", "Seasonal Loop"],
+        "tags": [
+          "Chapter Narrative",
+          "Branching Endings",
+          "Auto Combat",
+          "Seasonal Loop"
+        ],
         "timeline": "Q3 2024 - Present"
       }
     }
